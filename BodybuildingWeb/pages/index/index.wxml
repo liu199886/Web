@@ -1,0 +1,21 @@
+<view class="curr" 
+wx:for="{{coursesList}}"
+wx:key="courseid"
+>
+  <view class="curr_view">
+    <view class="poster curr_view_desc">
+        
+    </view>
+    <view class="details curr_view_desc">
+        <text class="t1">{{item.description}}</text>
+        <text class="t2">
+        {{item.detailed}}
+        </text>
+    </view>
+    <navigator 
+    class="content" 
+    url="/pages/goods_detial/goods_detial?description={{item.description}}&detailed={{item.detailed}}&courseid={{item.courseid}}"
+    bindtap="handlerJump">>></navigator>
+  </view>
+</view>
+  

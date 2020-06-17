@@ -1,0 +1,68 @@
+.curr {
+  width: 660rpx;
+  height: 200rpx;
+  position: relative;
+  margin: 0 auto;
+  top: 20rpx;
+}
+.curr .curr_view .poster {
+  width: 150rpx;
+  height: 150rpx;
+  background-color: blue;
+  left: 15rpx;
+  top: 25rpx;
+}
+.curr .curr_view .details {
+  width: 450rpx;
+  height: 130rpx;
+  background-color: green;
+  top: 35rpx;
+  left: 50rpx;
+}
+.curr .curr_view .details .t1 {
+  word-break: break-word;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.curr .curr_view .details .t2 {
+  word-break: break-word;
+  font-size: 20rpx;
+}
+.curr .curr_view .curr_view_desc {
+  float: left;
+  border-radius: 8rpx;
+  position: relative;
+}
+.line {
+  width: 100%;
+  margin-top: 40rpx;
+  border-top: 2px #989898 solid;
+}
+.course {
+  background-color: cyan;
+  position: relative;
+  width: 600rpx;
+  height: 100rpx;
+  margin: 0 auto;
+  top: 15rpx;
+}
+.course .course_cover {
+  left: 5rpx;
+  width: 80rpx;
+  background-color: red;
+}
+.course .course_desc {
+  background-color: yellow;
+  left: 15rpx;
+  width: 500rpx;
+}
+.course .course_desc text {
+  word-break: break-word;
+  font-size: 30rpx;
+}
+.course .course_f {
+  position: relative;
+  float: left;
+  height: 80rpx;
+  top: 10rpx;
+}

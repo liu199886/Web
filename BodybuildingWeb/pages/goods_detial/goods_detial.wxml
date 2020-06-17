@@ -1,0 +1,31 @@
+<view class="curr">
+  <view class="curr_view">
+    <view class="poster curr_view_desc">
+        
+    </view>
+    <view class="details curr_view_desc">
+        <text class="t1">{{course.description}}</text>
+        <text class="t2">
+        {{course.detailed}}
+        </text>
+    </view>
+  </view>
+</view>
+
+<!-- 分割线 -->
+<view class="line"/>
+  
+<!-- 课程列表 -->
+
+<view class="course">
+    <view class="course_cover course_f">
+        
+    </view>
+      
+    <view class="course_desc course_f">
+      <text>第一节</text>
+      <text>asdasdasdasdadadas</text>
+    </view>
+        
+</view>
+  

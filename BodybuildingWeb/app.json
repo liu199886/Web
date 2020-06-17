@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/goods_detial/goods_detial",
+    "pages/my/my"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#363636",
+    "navigationBarTitleText": "健身",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#363636",
+    "enablePullDownRefresh": true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar":{
+    "color": "#fff",
+    "selectedColor": "#fff",
+    "backgroundColor": "#363636",
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "text": "教程",
+        "iconPath": "./icons/list_2.png",
+        "selectedIconPath": "./icons/list_1.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./icons/user_2.png",
+        "selectedIconPath": "./icons/user_1.png"
+      }
+    ]
+  }
+}
