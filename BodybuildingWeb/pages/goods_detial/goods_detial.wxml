@@ -26,8 +26,10 @@ wx:key="courseSubId"
     </view>
       
     <view class="course_desc course_f">
-      <text>{{item.subitemTitle}}</text>
-      <text>{{item.subitem}}</text>
+      <text class="t1">{{item.subitemTitle}}</text>
+      <text class="t2">
+      {{item.subitem}}
+      </text>
     </view>
         
 </view>

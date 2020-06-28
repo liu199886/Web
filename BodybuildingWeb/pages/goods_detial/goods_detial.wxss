@@ -44,7 +44,7 @@
   width: 600rpx;
   height: 100rpx;
   margin: 0 auto;
-  top: 15rpx;
+  margin-top: 15rpx;
 }
 .course .course_cover {
   left: 5rpx;
@@ -56,9 +56,14 @@
   left: 15rpx;
   width: 500rpx;
 }
-.course .course_desc text {
+.course .course_desc .t1 {
   word-break: break-word;
   font-size: 30rpx;
+  font-weight: bold;
+}
+.course .course_desc .t2 {
+  word-break: break-word;
+  font-size: 20rpx;
 }
 .course .course_f {
   position: relative;

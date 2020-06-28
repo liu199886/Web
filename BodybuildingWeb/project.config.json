@@ -67,10 +67,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/goods_detial/goods_detial",
-					"pathName": "pages/goods_detial/goods_detial",
-					"query": "courseid=1",
+					"id": 1,
+					"name": "pages/my/my",
+					"pathName": "pages/my/my",
+					"query": "",
 					"scene": null
 				}
 			]
