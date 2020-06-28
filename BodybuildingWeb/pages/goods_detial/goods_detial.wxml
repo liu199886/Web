@@ -17,14 +17,17 @@
   
 <!-- 课程列表 -->
 
-<view class="course">
+<view class="course"
+wx:for="{{courseSubitem}}"
+wx:key="courseSubId"
+>
     <view class="course_cover course_f">
         
     </view>
       
     <view class="course_desc course_f">
-      <text>第一节</text>
-      <text>asdasdasdasdadadas</text>
+      <text>{{item.subitemTitle}}</text>
+      <text>{{item.subitem}}</text>
     </view>
         
 </view>

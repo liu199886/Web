@@ -7,7 +7,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    course :{}
+    course :{},
+    courseSubitem:[]
   },
 
   /**
@@ -17,12 +18,23 @@ Page({
     this.setData({
       course :  options
     });
-    console.log(this.data.course.courseid);
-    requesParameter({url:"course/courseSubitem"},{data:this.data.course})
-    .then(result => {
-      this.setData({
-        //coursesList : result
+    wx.request({
+      header: {
+        "content-type": "application/json;charset=UTF-8"
+      },
+      method: 'GET',
+      url:"http://localhost:8080/BodyBeautiful_war/course/courseSubitem?courseid="+this.data.course.courseid,
+      success:(result)=>{
+        console.log("ssssssss ");
+        console.log(result.data);
+        this.setData({
+          courseSubitem :  result.data
         });
-  })
+      },
+      fail:(err)=>{
+        
+      }
+    })
+    
   }
 })
