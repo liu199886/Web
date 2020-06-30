@@ -16,10 +16,10 @@
 
 <view class="my_course_list">
     <view class="by_time course">
-        <text class="t2" >购买时间：2020-02-28</text>
+        <text class="t2" >购买时间：{{user.byTimeAfter}}</text>
     </view>
     <view class="by_money course">
-        <text class="t3" >金额：￥15</text>
+        <text class="t3" >金额：￥{{user.orderAmountTotal}}</text>
     </view> 
 </view>
     

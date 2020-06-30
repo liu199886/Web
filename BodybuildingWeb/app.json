@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/pay/pay",
     "pages/index/index",
     "pages/goods_detial/goods_detial",
     "pages/my/my"

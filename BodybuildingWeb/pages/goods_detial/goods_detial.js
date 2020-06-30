@@ -25,8 +25,6 @@ Page({
       method: 'GET',
       url:"http://localhost:8080/BodyBeautiful_war/course/courseSubitem?courseid="+this.data.course.courseid,
       success:(result)=>{
-        console.log("ssssssss ");
-        console.log(result.data);
         this.setData({
           courseSubitem :  result.data
         });
