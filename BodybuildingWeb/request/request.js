@@ -1,6 +1,6 @@
 export const request=(path)=>{
     //定义公共url
-const baseUrl="http://localhost:8080/BodyBeautiful_war/";
+const baseUrl="http://192.168.1.27:8080/BodyBeautiful_war/";
 return new Promise((resolve,reject)=>{
   wx.request({
     ...path,
@@ -21,7 +21,7 @@ return new Promise((resolve,reject)=>{
 }
 export const requesParameter=(path,params)=>{
   //定义公共url
-const baseUrl="http://localhost:8080/BodyBeautiful_war/";
+const baseUrl="http://192.168.1.27:8080/BodyBeautiful_war/";
 console.log("进入requesParameter方法"+path);
 console.log(path);
 console.log(params.data);

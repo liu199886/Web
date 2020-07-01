@@ -1,4 +1,5 @@
-// pages/pay/pay.js
+
+import {requesParameter} from "../../request/request"
 Page({
 
   /**
@@ -19,20 +20,10 @@ Page({
     if (res.detail.userInfo) {
       console.log(res);
       wx.login({
-        success:res => {
-          wx.request({
-            // 自行补上自己的 APPID 和 SECRET
-          url: "https://api.weixin.qq.com/sns/jscode2session",
-          method:"GET",
-          data:{
-            appid:"wx3a405abf9e4625f7",
-            secret:"3719989a5de3c24b805485b19399a941",
-            js_code:res.code,
-            grant_type:"authorization_code"
-          },
-          success: res => {
-         }
-        });
+        success:userInfoRes => {
+          console.log("adadadada97d9a7d9a-- ------");
+          this.getUserMessage(userInfoRes);
+          console.log("adadadada97d9a7d9a-- aaaaaaaaa ppp");
         },
       })
     }else{
@@ -83,5 +74,33 @@ Page({
           }
     
         });
+  },
+  addToUser:function(resData){
+    wx.getUserInfo({
+      complete: (res) => {
+        console.log(resData.data);
+        console.log(res);
+        requesParameter({url:"user/addUser"},{data:{
+          openid:resData.data.openid,
+          nickname:res.userInfo.nickName
+        }});
+      },
+    })
+  },
+  getUserMessage:function(res){
+    wx.request({
+      // 自行补上自己的 APPID 和 SECRET
+    url: "https://api.weixin.qq.com/sns/jscode2session",
+    method:"GET",
+    data:{
+      appid:"wx3a405abf9e4625f7",
+      secret:"3719989a5de3c24b805485b19399a941",
+      js_code:res.code,
+      grant_type:"authorization_code"
+    },
+    success: userMessageRes => {
+      this.addToUser(userMessageRes);
+   }
+  });
   }
 })
